@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Tech Team</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #2554ad;
+        color: #fff;
+        text-align: center;
+        animation: fadeInDown 1.5s ease-in-out;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: auto;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+        position: relative;
+        transition: color 0.3s;
+    }
+
+    nav a::before {
+        content: '';
+        position: absolute;
+        bottom: -3px; 
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        color: #f1f1f1;
+        background-color: #1c4177;
+    }
+
+    nav a:hover::before {
+        transform: scaleX(1);
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 120px auto 40px;
+        padding: 20px;
+    }
+
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    h1 {
+        font-size: 36px;
+        margin: 10px;
+    }
+
+    h2 {
+        color: #007bff;
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 315px;
+    }
+
+    h3 {
+        color: #0056b3;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    footer {
+            text-align: center;
+            margin-top: 40px;
+            background-color: #2554ad;
+            padding: 10px;
+            color: #fff;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: auto;
+        margin-right: 5px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo da Info Tech Team" class="footer-logo">
+        <h1 class="animate__animated animate__fadeInDown">Info Tech Team</h1>
+        <nav id="side-menu">
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#excel">Microsoft Excel</a>
+            <a href="#word">Microsoft Word</a>
+        </nav>
+    </header>
+
+
+
+    <div class="container animate__animated animate__fadeIn">
+        <section id="curiosidades">
+            <ul>
+                <h2>Curiosidades sobre informática e Tecnologias empresariais</h2>
+                <li>A revolução dos dispositivos móveis: Desde o lançamento do primeiro iPhone em 2007, os smartphones se tornaram parte essencial da vida moderna. Atualmente, eles são utilizados não apenas para comunicação, mas também para acesso a aplicativos e serviços diversos, incluindo pagamentos digitais e saúde móvel.</li>
+                <li>A era da inteligência artificial: A inteligência artificial (IA) está se tornando cada vez mais presente em nosso dia a dia. Algoritmos de IA são usados em recomendações de produtos, assistentes virtuais, diagnósticos médicos e até mesmo em carros autônomos, transformando a forma como interagimos com a tecnologia.</li>
+                <li>A segurança cibernética em constante evolução: Com o aumento das ameaças cibernéticas, a segurança da informação se tornou uma prioridade para as empresas. Novas tecnologias, como a autenticação biométrica e a criptografia avançada, estão sendo implementadas para proteger dados sensíveis contra ataques e violações.</li>
+                <li>Blockchain e criptomoedas: A tecnologia blockchain, conhecida por sua natureza descentralizada e segura, possibilitou o surgimento das criptomoedas, como o Bitcoin e o Ethereum. Essas moedas digitais têm impactado o setor financeiro e aberto caminho para novas formas de transações e contratos inteligentes.</li>
+                <li>Impressão 3D: A impressão 3D revolucionou a manufatura e o desenvolvimento de produtos. Empresas agora podem criar protótipos e produtos finais em uma escala mais rápida e personalizada, reduzindo custos e tempo de produção.</li>
+            </ul>
+        </section>
+
+        <section id="excel">
+            <h3>Dicas e Funções do Microsoft Excel:</h3>
+            <ul>
+                <li>Atalho para abrir uma nova planilha: Pressione "Ctrl + N".</li>
+                <li>Para somar um conjunto de células, use a fórmula "=SOMA(célula1:célula2)".</li>
+                <li>Para contar o número de células em um intervalo, use a fórmula "=CONTAR(célula1:célula2)".</li>
+                <li>Para encontrar o valor máximo em um intervalo, use a fórmula "=MAIOR(célula1:célula2)".</li>
+                <li>Para congelar painéis e manter cabeçalhos visíveis enquanto rola na planilha, vá para a guia "Exibição" e selecione "Congelar Painéis".</li>
+            </ul>
+            <h3>Assista ao vídeo:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kYhsxDg-IvM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+
+        <section id="word">
+            <h3>Dicas e Funções do Microsoft Word:</h3>
+            <ul>
+                <li>Atalho para criar um novo documento: Pressione "Ctrl + N".</li>
+                <li>Para negritar texto, selecione-o e pressione "Ctrl + N".</li>
+                <li>Para inserir uma quebra de página, pressione "Ctrl + Enter".</li>
+                <li>Para criar uma lista numerada, pressione "Ctrl + Shift + L".</li>
+                <li>Para criar uma tabela, vá para a guia "Inserir" e selecione "Tabela".</li>
+            </ul>
+            <h3>Assista ao vídeo:</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fm_CVSOyePY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <footer>
+        <h4>Criador Cleiton Teixeira</h4>
+    </footer>
+
+    <script>
+        let prevScrollpos = window.pageYOffset;
+        const header = document.querySelector("header");
+
+        window.onscroll = function () {
+            // Aparição e ocultação do cabeçalho ao rolar a página
+            const currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                // Quando a rolagem é para cima, o menu aparece
+                header.style.top = "0";
+            } else {
+                // Quando a rolagem é para baixo, o menu desaparece
+                header.style.top = "-60px"; // Ajuste o valor para determinar a quantidade que o cabeçalho deve desaparecer.
+            }
+            prevScrollpos = currentScrollPos;
+        };
+
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

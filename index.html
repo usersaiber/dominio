@@ -209,14 +209,11 @@
         const header = document.querySelector("header");
 
         window.onscroll = function () {
-            // Aparição e ocultação do cabeçalho ao rolar a página
             const currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
-                // Quando a rolagem é para cima, o menu aparece
                 header.style.top = "0";
             } else {
-                // Quando a rolagem é para baixo, o menu desaparece
-                header.style.top = "-60px"; // Ajuste o valor para determinar a quantidade que o cabeçalho deve desaparecer.
+                header.style.top = "-60px";
             }
             prevScrollpos = currentScrollPos;
         };
